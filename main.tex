@@ -75,5 +75,17 @@
 
         \end{itemize} 
 
-        
+
+    \subsection{Memory profiling}
+        \subsubsection{Memory Leak}
+            A memory leak occurs when memory is allocated during runtime 
+            (using functions like \texttt{malloc} or \texttt{calloc}) but is 
+            not freed (using \texttt{free}).
+             This causes the program to take up more memory from the system 
+             and not return it. As a result, the program may run out of memory, 
+             or the system might slow 
+             down. Memory leaks usually occur due to forgetting to free the 
+             allocated memory or losing access to the memory address.
+
+             
 \end{document}
