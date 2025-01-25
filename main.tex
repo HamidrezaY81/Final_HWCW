@@ -1,0 +1,42 @@
+\documentclass{article}
+
+\usepackage{fancyhdr}
+\usepackage{hyperref} 
+\usepackage{geometry} 
+\geometry{a4paper, margin=1in}
+\usepackage{graphicx}
+
+\title{Computer Workshop \\ Final Homework}
+\author{Hamidreza Yadegari}
+\date{winter of 4031}
+
+\hypersetup{hidelinks}
+\pagestyle{fancy}
+\fancyhead[L]{\thepage}
+
+\begin{document}
+
+\maketitle 
+\thispagestyle{empty}
+\newpage
+
+\tableofcontents
+\fancyhead[R]{Final HomeWork}
+\setcounter{page}{1}
+\newpage
+
+\section{Git and GitHub}
+    \subsection{Repository Initialization and Commits}
+        First, we create a repository in GitHub by entering the desired name in its creation and ticking the box to create a `README` file. Then, using the command `git clone <repository-SSH-link>`, we transfer the above repository to our system. After that, we create a file called `main.tex` to write the answers to the questions. 
+
+        Next, we use the command `git add .` to add it to the staging area. Then, we commit the file with the command:
+        \begin{verbatim}
+            git commit -m "add main.tex"
+        \end{verbatim}
+            Finally, we apply the changes to GitHub with the command:
+        \begin{verbatim}
+            git push origin master
+        \end{verbatim}
+        Now the project is ready for the next stage.
+    
+\end{document}
