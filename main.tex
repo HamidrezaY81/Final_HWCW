@@ -54,5 +54,26 @@
             \begin{verbatim}
             git push origin main
             \end{verbatim}
+
+
+\section{Exploration Tasks}
+    \subsection{Vim Advanced Features}
+        \begin{itemize}
+            \item 
+            In Vim, we can define macros for repetitive tasks so that instead of manually performing repetitive actions, Vim can automatically apply the desired changes throughout the entire file using the created macro. 
+    
+            To do this, in \textbf{Normal Mode}, press the \texttt{q} key and then a desired key to reserve and save the macro. After that, apply the desired changes to a specific part of the file. Once finished, press \texttt{q} again to save the macro. 
+    
+            Now, using the command \texttt{@<reserved\_key>n}, the required changes will be applied to \textbf{n} places in the file.
+
             
+            \item 
+            In Vim, you can replace a string matching a pattern with another string using the \texttt{:s/pattern/new/} command. This command replaces the first occurrence of the pattern found in the current line. If you want to replace all occurrences of the pattern within a line, you can use \texttt{:s/pattern/new/g}. To replace all occurrences of the pattern throughout the entire file, use \texttt{:\%s/pattern/new/g}.
+
+            \item 
+            In Vim, you can split the window vertically using \texttt{:vsp} or horizontally using \texttt{:sp}. To switch between windows, use \texttt{Ctrl-w w}. To close a window, use \texttt{:q}, and to adjust the window size, use \texttt{Ctrl-w +} or \texttt{Ctrl-w -}.
+
+        \end{itemize} 
+
+        
 \end{document}
