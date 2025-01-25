@@ -38,5 +38,21 @@
             git push origin master
         \end{verbatim}
         Now the project is ready for the next stage.
-    
+        \\
+        \subsection{GitHub Actions for LaTeX Compilation}
+            To set up GitHub Actions for LaTeX compilation, we first create a directory named `.github` in the main directory of the remote repository. Inside `.github`, we create another directory named `workflows`. Then, we create a file called `latex-build.yml` inside the `workflows` directory and add the settings from the site:
+            \url{https://mrturkmen.com/posts/build-release-latex/}.
+            
+            In the `root\_file`, `asset\_path`, and `asset\_name` fields of the YAML file, we replace the word `main` with the name of the LaTeX file created in the previous step. 
+            
+            After making these changes, we use the following commands to add and commit the changes:
+            \begin{verbatim}
+            git add .
+            git commit -m "add .github"
+            \end{verbatim}
+            Finally, we push the changes to GitHub using:
+            \begin{verbatim}
+            git push origin main
+            \end{verbatim}
+            
 \end{document}
